@@ -10,7 +10,10 @@ const options = {
     },
     servers: [
       {
-        url: "http://localhost:5000",
+        url:
+          process.env.NODE_ENV === "production"
+            ? "https://book-store-1-oy6h.onrender.com/"
+            : "http://localhost:5000",
       },
     ],
     components: {
