@@ -1,15 +1,17 @@
 const express = require("express");
-const dotenv = require("dotenv");
-const connectDB = require("./src/config/db");
 
-dotenv.config();
+const authRoutes = require("./src/routes/auth.routes");
+const bookRoutes = require("./src/routes/book.routes");
 
 const app = express();
 
-connectDB();
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Backend running");
 });
 
-app.listen(3000, () => console.log("Server started"));
+app.use("/api/auth", authRoutes);
+app.use("/api/books", bookRoutes);
+
+module.exports = app;
