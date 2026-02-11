@@ -1,6 +1,10 @@
 const express = require("express");
 const serverless = require("serverless-http");
 
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+
 const connectDB = require("../src/config/db");
 
 const authRoutes = require("../src/routes/auth.route");
