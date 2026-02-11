@@ -2,6 +2,7 @@ const express = require("express");
 
 const authRoutes = require("./src/routes/auth.route");
 const bookRoutes = require("./src/routes/book.route");
+const userRoutes = require("./src/routes/user.route");
 
 const app = express();
 
@@ -13,5 +14,6 @@ app.get("/", (req, res) => {
 
 app.use("/api/auth", authRoutes);
 app.use("/api/books", bookRoutes);
+app.use("/api/users", userRoutes);
 
 module.exports = app;
