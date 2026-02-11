@@ -1,5 +1,4 @@
 const express = require("express");
-const dotenv = require("dotenv");
 const serverless = require("serverless-http");
 
 const connectDB = require("../src/config/db");
@@ -13,8 +12,6 @@ const reviewRoutes = require("../src/routes/review.route");
 
 const swaggerUi = require("swagger-ui-express");
 const swaggerSpec = require("../src/config/swagger");
-
-dotenv.config();
 
 const app = express();
 
