@@ -7,6 +7,9 @@ const cartRoutes = require("./src/routes/cart.route");
 const orderRoutes = require("./src/routes/order.route");
 const reviewRoutes = require("./src/routes/review.route");
 
+const swaggerUi = require("swagger-ui-express");
+const swaggerSpec = require("./src/config/swagger");
+
 const app = express();
 
 app.use(express.json());
@@ -21,6 +24,8 @@ app.use("/api/users", userRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/reviews", reviewRoutes);
+
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 
 module.exports = app;
