@@ -2,16 +2,32 @@ const mongoose = require("mongoose");
 
 const orderSchema = new mongoose.Schema(
   {
-    userId: {
+    user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User"
+      ref: "User",
+      required: true
     },
-    items: Array,
-    totalPrice: Number,
+    orderItems: [
+      {
+        book: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Book",
+          required: true
+        },
+        quantity: {
+          type: Number,
+          required: true
+        }
+      }
+    ],
+    totalPrice: {
+      type: Number,
+      required: true
+    },
     status: {
       type: String,
-      enum: ["placed", "shipped", "delivered", "cancelled"],
-      default: "placed"
+      enum: ["Pending", "Shipped", "Delivered", "Cancelled"],
+      default: "Pending"
     }
   },
   { timestamps: true }
