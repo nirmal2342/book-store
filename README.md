@@ -1,118 +1,167 @@
-📚 Online Bookstore – REST API (MERN Backend)
+📚 Online Bookstore – REST API (MERN Backend) 
 
-A complete RESTful API for an Online Bookstore built using Node.js, Express, MongoDB, and JWT Authentication.
-The API supports user management, book catalog, shopping cart, orders, and reviews.
+A complete RESTful API for an Online Bookstore built using Node.js, Express, MongoDB, and JWT Authentication. 
+The API supports user management, book catalog, shopping cart, orders, and reviews. 
 
-🚀 Live Demo
+ 
 
-Base URL:
+🚀 Live Demo 
 
-https://book-store-1-oy6h.onrender.com/
+Base URL: 
 
-Swagger API Documentation:
+https://book-store-1-oy6h.onrender.com/ 
+ 
 
-https://book-store-1-oy6h.onrender.com/api-docs
+Swagger API Documentation: 
 
-🛠 Tech Stack
+https://book-store-1-oy6h.onrender.com/api-docs 
 
-Node.js
-Express.js
-MongoDB Atlas
-Mongoose
-JWT Authentication
-Swagger (API Documentation)
-Render (Deployment)
+ 
 
-📂 Project Structure
-backend/
-│
-├── src/
-│   ├── config/        # Database & Swagger configuration
-│   ├── controllers/   # Business logic
-│   ├── middleware/    # Auth middleware
-│   ├── models/        # Mongoose schemas
-│   └── routes/        # API routes
-│
-├── server.js          # Entry point
-├── app.js             # Express app setup
-└── package.json
+ 
 
-📌 Features
-🔐 User Management
+🛠 Tech Stack 
 
-Register user
-Login user (JWT authentication)
-View profile
-Update profile
+Node.js 
 
-📚 Book Catalog
+Express.js 
 
-View all books
-View book by ID
-Add book (Admin/Protected)
-Search & filter books
+MongoDB Atlas 
 
-🛒 Shopping Cart
+Mongoose 
 
-Add book to cart
-Update quantity
-Remove from cart
-View cart
+JWT Authentication 
 
-📦 Order Management
+Swagger (API Documentation) 
 
-Place order
-View order history
-Cancel order
-Track order status
+Render (Deployment) 
 
-⭐ Reviews & Ratings
+ 
 
-Add review
-Rate book (1–5 stars)
-View all reviews for a book
+📂 Project Structure 
 
-🔑 Authentication
+backend/ 
+│ 
+├── src/ 
+│   ├── config/        # Database & Swagger configuration 
+│   ├── controllers/   # Business logic 
+│   ├── middleware/    # Auth middleware 
+│   ├── models/        # Mongoose schemas 
+│   └── routes/        # API routes 
+│ 
+├── server.js          # Entry point 
+├── app.js             # Express app setup 
+└── package.json 
+ 
 
-This API uses JWT (JSON Web Token) for authentication.
+ 
 
-Protected routes require:
+📌 Features 
 
-Authorization: Bearer <your_token>
+🔐 User Management 
 
-⚙️ Environment Variables
+Register user 
 
-Create a .env file in the backend root:
+Login user (JWT authentication) 
 
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+View profile 
 
-🧪 Running Locally
-1️⃣ Clone the Repository
-git clone https://github.com/nirmal2342/book-store.git
-cd book-store/backend
+Update profile 
 
-2️⃣ Install Dependencies
-npm install
+📚 Book Catalog 
 
-3️⃣ Run the Server
+View all books 
 
-Development mode:
+View book by ID 
 
-npm run dev
+Add book (Admin/Protected) 
 
+Search & filter books 
 
-Production mode:
+🛒 Shopping Cart 
 
-npm start
+Add book to cart 
 
+Update quantity 
 
-Server runs at:
+Remove from cart 
 
-http://localhost:5000
+View cart 
 
+📦 Order Management 
 
-Swagger docs:
+Place order 
 
-http://localhost:5000/api-docs
+View order history 
+
+Cancel order 
+
+Track order status 
+
+⭐ Reviews & Ratings 
+
+Add review 
+
+Rate book (1–5 stars) 
+
+View all reviews for a book 
+
+ 
+
+🔑 Authentication 
+
+This API uses JWT (JSON Web Token) for authentication. 
+
+Protected routes require: 
+
+Authorization: Bearer <your_token> 
+ 
+
+ 
+
+⚙️ Environment Variables 
+
+Create a .env file in the backend root: 
+
+PORT=5000 
+MONGO_URI=your_mongodb_connection_string 
+JWT_SECRET=your_secret_key 
+ 
+
+ 
+
+🧪 Running Locally 
+
+1️⃣ Clone the Repository 
+
+git clone https://github.com/nirmal2342/book-store.git 
+cd book-store/backend 
+ 
+
+2️⃣ Install Dependencies 
+
+npm install 
+ 
+
+3️⃣ Run the Server 
+
+Development mode: 
+
+npm run dev 
+ 
+
+Production mode: 
+
+npm start 
+ 
+
+Server runs at: 
+
+http://localhost:5000 
+ 
+
+Swagger docs: 
+
+http://localhost:5000/api-docs 
+
+ 
