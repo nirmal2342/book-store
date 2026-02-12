@@ -7,12 +7,11 @@ The API supports user management, book catalog, shopping cart, orders, and revie
 
 Base URL:
 
-https://your-render-url.onrender.com
-
+https://book-store-1-oy6h.onrender.com/
 
 Swagger API Documentation:
 
-https://your-render-url.onrender.com/api-docs
+https://book-store-1-oy6h.onrender.com/api-docs
 
 🛠 Tech Stack
 
@@ -91,7 +90,7 @@ JWT_SECRET=your_secret_key
 
 🧪 Running Locally
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/book-store.git
+git clone https://github.com/nirmal2342/book-store.git
 cd book-store/backend
 
 2️⃣ Install Dependencies
